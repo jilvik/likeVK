@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QiD-DF-ZDb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="IJ9-Za-wAa">
+            <objects>
+                <tabBarController id="QiD-DF-ZDb" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QaK-zg-hB8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="YuK-q4-5ZG"/>
+                        <segue destination="w2v-dE-Tgo" kind="relationship" relationship="viewControllers" id="hzB-2s-wTt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a14-Zh-E8Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-849" y="100"/>
+        </scene>
+        <!--Trash-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="likeVK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3K5-j8-Lmx">
+                                <rect key="frame" x="57" y="425.5" width="300" height="45"/>
+                                <color key="backgroundColor" red="0.1529411765" green="0.52941176469999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="hjo-OL-OJj"/>
+                                    <constraint firstAttribute="width" constant="300" id="w37-V6-Ojh"/>
+                                </constraints>
+                                <state key="normal" title="Just 4 test auth">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vKY-0R-UtH" kind="show" id="e30-vy-zwl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3K5-j8-Lmx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mRU-Cx-xCY"/>
+                            <constraint firstItem="3K5-j8-Lmx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="po3-wz-vwr"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trash" image="trash" catalog="system" id="qAL-Qm-PJM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="99.776785714285708"/>
+        </scene>
+        <!--AuthScreen-->
+        <scene sceneID="YyR-DZ-ejl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AuthScreen" id="vKY-0R-UtH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Nk4-Yk-Nxm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ah-SM-NGi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="482"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="mZh-YZ-zvA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="w2v-dE-Tgo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="LNe-CP-rsL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tx5-9b-IP5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-374" y="538"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="trash" catalog="system" width="121" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
